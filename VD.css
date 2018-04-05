@@ -1,11 +1,79 @@
+/* 
+CSS page for Vektor Directive project
+By Cory Daniel
+*/
+
 body {
-	background-color: #737373
-}
-
-h1 {
+	 background-color: #737373 
 
 }
 
-p {
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 1px;
 
+}
+
+.parallax {
+    /* The image used */
+    
+    background-image: url('images/img_parallax.png');
+
+    /* Full height */
+    height: 25%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+ /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+header, footer {
+	padding: 1em;
+	color: #66e0ff;
+	/*background-color: black;*/
+	text-align: center;
+	font-style: 	
+
+}
+
+ul {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+	background-color: #111;
+}
+..
+.active {
+	background-color: #66e0ff;
 }
