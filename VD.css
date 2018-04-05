@@ -15,6 +15,7 @@ body, html {
 
 }
 
+<<<<<<< HEAD
 .parallax {
     /* The image used */
     
@@ -28,7 +29,35 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+=======
+body, html {
+    height: 100%;
+}
 
+.parallax {
+    /* The image used */
+    background-image: url("img_parallax.jpg");
+>>>>>>> 0260e9d5ca73d3a3e2dbdeb0a7d791a81fafbce0
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+} 
+
+h1 {
+	
 }
 
  /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
@@ -38,6 +67,7 @@ body, html {
     }
 }
 
+<<<<<<< HEAD
 header, footer {
 	padding: 1em;
 	color: #66e0ff;
@@ -76,4 +106,6 @@ li a:hover:not(.active) {
 ..
 .active {
 	background-color: #66e0ff;
+=======
+>>>>>>> 0260e9d5ca73d3a3e2dbdeb0a7d791a81fafbce0
 }
